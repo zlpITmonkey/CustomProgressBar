@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sumile="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.sumile.progress.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.example.customprogressbar.HorizontalProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            sumile:progress_text_color="#ffFC00D1"
+            sumile:progress_unreach_color="#FFD3D6DA"
+            sumile:progress_reach_color="#ffFC00D1"
+            sumile:progress_unreach_height="5dp"
+            sumile:progress_reach_height="5dp"
+            android:padding="5dp"
+            android:progress="35"
+            android:indeterminate="false" />
+        <com.example.customprogressbar.RoundProgressBarWithProgress
+            android:id="@+id/progress2"
+            android:layout_width="match_parent"
+            sumile:progress_radius="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            sumile:progress_text_color="#ffff0000"
+            sumile:progress_unreach_color="#44ff0000"
+            sumile:progress_reach_color="#ffff0000"
+            android:padding="5dp"
+            android:progress="35"
+            android:indeterminate="false" />
+    </LinearLayout>
+</ScrollView>
